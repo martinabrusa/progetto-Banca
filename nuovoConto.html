@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="style.css">
+  <title>Nuovo Conto</title>
+</head>
+
+<body>
+
+
+  <div class="container-fluid mt-5 mb-5">
+    <button type="button" class="btn btn-success float-sm-right "><a href="login.html">Logout</a> </button>
+    <h1 class="text-center">Nuovo Conto</h1><br>
+
+    <h3>Info del Cliente:</h3>
+    <hr><br>
+
+    <div class="row ">
+      <div class="col md-4 "> <!--Campi obbligatori con js-->
+        <div class="form-group">
+          <label for="input_nome">Nome*</label>
+          <input oninput="this.value = this.value.toUpperCase()" id="Nome" type="text"
+            class="form-control" placeholder="Inserisci nome">
+        </div>
+      </div>
+      <div class="col md-4 ">
+        <div class="form-group">
+          <label for="input_cognome">Cognome*</label>
+          <input  oninput="this.value = this.value.toUpperCase()" id="Cognome" type="text"
+            class="form-control " placeholder="Inserisci cognome">
+        </div>
+      </div>
+    </div>
+
+
+
+
+    <div class="row">
+      <div class="col md-4 ">
+        <div class="form-group">
+          <label for="input_CF">Codice Fiscale*</label>
+          <input  oninput="this.value = this.value.toUpperCase()" id="codice_Fiscale" type="text"
+            class="form-control " placeholder="Inserisci codice fiscale">
+        </div>
+      </div>
+
+      <div class="col md-4 ">
+        <div class="form-group">
+          <label for="input_data_nascita">Data di Nascita*</label>
+          <input  id="dataDiNascita" type="date" class="form-control reset"
+            placeholder="Metti la data di nascita">
+        </div>
+      </div>
+    </div>
+
+
+
+    <div class="row">
+      <div class="col md-4 ">
+        <div class="form-group">
+          <label for="input_luogo_di_nascita">Luogo di nascita*</label>
+          <select  id="luogoDiNascita" class="custom-select">
+            <option value="0" selected>Scegli il luogo di nascita</option>
+            <option value="Aosta">Aosta</option>
+            <option value="Torino">Torino</option>
+            <option value="Genova">Genova</option>
+            <option value="Milano">Milano</option>
+            <option value="Trento">Trento</option>
+            <option value="Venezia">Venezia</option>
+            <option value="Trieste">Trieste</option>
+            <option value="Bologna">Bologna</option>
+            <option value="Firenze">Firenze</option>
+            <option value="Ancona">Ancona</option>
+            <option value="Perugia">Perugia</option>
+            <option value="Roma">Roma</option>
+            <option value="L'aquila">L'aquila</option>
+            <option value="Campobasso">Campobasso</option>
+            <option value="Napoli">Napoli</option>
+            <option value="Bari">Bari</option>
+            <option value="Potenza">Potenza</option>
+            <option value="Catanzaro">Catanzaro</option>
+            <option value="Palermo">Palermo</option>
+            <option value="Cagliari">Cagliari</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="col md-4 ">
+        <div class="form-group">
+          <label for="input_email">Email</label>
+          <input  oninput="this.value = this.value.toUpperCase()" id="Email" type="email"
+            class="form-control " placeholder="Inserisci l'email">
+        </div>
+      </div>
+    </div>
+
+
+    <div class="row">
+      <div class="col md-4 ">
+        <div class="form-group">
+          <label for="input_numero_cellulare">Numero Cellulare</label>
+          <input for="" id="numeroCellulare"
+            type="tel" class="form-control " placeholder="Inserisci il numero di cellulare">
+        </div>
+      </div>
+
+      <div class="col md-4 ">
+        <div class="form-group">
+          <label for="input_numero_documento" >Numero Documento*</label>
+          <input oninput="this.value = this.value.toUpperCase()" id="numeroDocumento" type="text" class="form-control "
+            placeholder="Inserisci il numero di documento">
+        </div>
+      </div>
+    </div>
+
+
+
+    <div class="row">
+
+      <div class="col md-4 ">
+        <div class="form-group">
+          <label for="input_tipologia_documento">Tipologia Documento*</label>
+          <select for="" id="tipologiaDocumento" class="custom-select">
+            <option value="0" selected>Scegli la tipologia del documento</option>
+            <option value="Patente">Patente</option>
+            <option value="CartaID">Carta d'identità</option>
+            <option value="Passaporto">Passaporto</option>
+          </select>
+        </div>
+
+
+      </div>
+
+      <div class="col md-4 ">
+        <div class="form-group">
+          <label for="input_indirizzo_residenza">Indirizzo di residenza*</label>
+          <input oninput="this.value = this.value.toUpperCase()" id="indirizzoResidenza" type="text" class="form-control reset"
+            placeholder="Inserire indirizzo di residenza">
+        </div>
+      </div>
+    </div> <br>
+
+
+
+
+
+
+
+    <h2>Info del conto</h2>
+    <hr><br>
+
+    <div class="row">
+
+      <div class="col md-4 ">
+        <div class="form-group">
+          <label for="input_tipologia_conto">Tipologia del conto*</label>
+          <select  id="tipologiaConto" class="custom-select">
+            <option value="0" selected>Scegli la tipologia del conto</option>
+            <option value="myMoney">My money</option>
+            <option value="myMoneyJunior">My money Junior</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="col md-4 ">
+        <div class="form-group">
+          <label for="input_filiale">Filiale di Riferimento*</label>
+          <select id="filialeRiferimento"  class="custom-select">
+            <option value="0" selected>Scegli la filiale di riferimento</option>
+            <option value="Aosta">Aosta</option>
+            <option value="Torino">Torino</option>
+            <option value="Genova">Genova</option>
+            <option value="Milano">Milano</option>
+            <option value="Trento">Trento</option>
+            <option value="Venezia">Venezia</option>
+            <option value="Trieste">Trieste</option>
+            <option value="Bologna">Bologna</option>
+            <option value="Firenze">Firenze</option>
+            <option value="Ancona">Ancona</option>
+            <option value="Perugia">Perugia</option>
+            <option value="Roma">Roma</option>
+            <option value="L'aquila">L'aquila</option>
+            <option value="Campobasso">Campobasso</option>
+            <option value="Napoli">Napoli</option>
+            <option value="Bari">Bari</option>
+            <option value="Potenza">Potenza</option>
+            <option value="Catanzaro">Catanzaro</option>
+            <option value="Palermo">Palermo</option>
+            <option value="Cagliari">Cagliari</option>
+          </select>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="mb-5 ml-5"><input class="btn btn-primary " onclick="validazioneNuovoConto(); " type="submit" value="Salva" ></div>
+
+
+
+
+
+
+  <div class="table-responsive-lg">
+
+    <h1 class="text-center">Info Cliente</h1>
+
+    <table class=" table table-striped  mb-5 mt-5 text-center">
+      <thead>
+        <tr>
+          <th>Nome</th>
+          <th>Cognome</th>
+          <th>Codice Fiscale</th>
+          <th>Data di Nascita</th>
+          <th>Luogo di Nascita</th>
+
+      <tbody id="contenuto-tabella-cliente1">
+        <!-- Contenuto generato dinamicamente -->
+      </tbody>
+
+      </tr>
+      </thead>
+
+    </table>
+  </div>
+
+  <div class="table-responsive-lg">
+    <table class=" table table-striped  mb-5 mt-5 text-center">
+      <thead>
+        <tr>
+          <th>Email</th>
+          <th>Numero di Cellulare</th>
+          <th>Numero Documento</th>
+          <th>Tipologia Documento</th>
+          <th>Indirizzo Residenza</th>
+
+
+      <tbody id="contenuto-tabella-cliente2">
+        <!-- Contenuto generato dinamicamente -->
+      </tbody>
+      </tr>
+      </thead>
+    </table>
+  </div>
+
+
+
+
+  <div class="table-responsive-sm">
+
+    <h1 class="text-center">Info Conto</h1>
+
+    <table class=" table table-striped  mb-5 mt-5 text-center">
+      <thead>
+        <tr>
+          <th>Tipologia del Conto</th>
+          <th>Filiale di Riferimento</th>
+        </tr>
+      </thead>
+      <tbody id="contenuto-tabella-conto">
+        <!-- Contenuto generato dinamicamente -->
+      </tbody>
+    </table>
+  </div>
+
+
+
+
+
+
+  <script>
+    const birthdateInput = document.getElementById('dataDiNascita');
+const productSelect = document.getElementById('tipologiaConto');
+const myMoneyOption = productSelect.querySelector('option[value="myMoney"]');
+const myMoneyJuniorOption = productSelect.querySelector('option[value="myMoneyJunior"]');
+
+birthdateInput.addEventListener('input', () => {
+  const birthdate = new Date(birthdateInput.value);
+  const age = calculateAge(birthdate);
+
+  if (age >= 14 && age <= 18) {
+    myMoneyOption.disabled = true;
+    myMoneyJuniorOption.disabled = false;
+    productSelect.value = "myMoneyJunior";
+  } else if (age > 18) {
+    myMoneyOption.disabled = false;
+    myMoneyJuniorOption.disabled = true;
+    productSelect.value = "myMoney";
+  } else {
+    myMoneyOption.disabled = false;
+    myMoneyJuniorOption.disabled = false;
+  }
+});
+
+function calculateAge(birthdate) {
+  const today = new Date();
+  let age = today.getFullYear() - birthdate.getFullYear();
+  const monthDiff = today.getMonth() - birthdate.getMonth();
+
+  if (monthDiff < 0 || (monthDiff === 0 && today.getDate() < birthdate.getDate())) {
+    age--;
+  }
+
+  return age;
+}
+
+    </script>
+  <script src="https://code.jquery.com/jquery-3.6.3.js" integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM="
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+  <script src="script.js"></script>
+</body>
+
+</html>

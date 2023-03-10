@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="style.css">
+  <title>Dettaglio Conto</title>
+</head>
+
+<body>
+  <div class="container-fluid mt-5 mb-5">
+    <div>
+      <button type="button" class="btn btn-success float-sm-right "><a href="login.html">Logout</a> </button>
+    </div>
+
+
+    <div class="table-responsive-lg">
+
+      <h1 class="text-center">Dettaglio conto</h1>
+
+      <table class=" table table-striped  mb-5 mt-5 text-center">
+        <thead>
+          <tr>
+            <th>Tipologia Conto</th>
+            <th>ID Conto</th>
+            <th> NDG Identificativo Cliente</th>
+            <th>Nome</th>
+            <th>Cognome</th>
+
+        <tbody id="contenuto-tabella-cliente1">
+          <!-- Contenuto generato dinamicamente -->
+        </tbody>
+
+        </tr>
+        </thead>
+
+      </table>
+    </div>
+
+    <div class="table-responsive-lg">
+      <table class=" table table-striped  mb-5 mt-5 text-center">
+        <thead>
+          <tr>
+            <th>Codice Fiscale</th>
+            <th>Filiale di Riferimento</th>
+            <th>Data Apertura</th>
+
+
+
+        <tbody id="contenuto-tabella-cliente2">
+          <!-- Contenuto generato dinamicamente -->
+        </tbody>
+        </tr>
+        </thead>
+      </table>
+    </div>
+
+    <div class="table-responsive-lg">
+      <h1 class="text-center">Iban</h1>
+      <table class=" table table-striped  mb-5 mt-5 text-center">
+        <thead>
+          <tr>
+            <th>Paese</th>
+            <th>CIN EUR</th>
+            <th>CIN</th>
+            <th>ABI</th>
+            <th>CAB</th>
+            <th>C/C</th>
+
+
+        <tbody id="contenuto-tabella-iban">
+          <!-- Contenuto generato dinamicamente -->
+        </tbody>
+        </tr>
+        </thead>
+      </table>
+    </div>
+
+
+
+    <div class="table-responsive-lg">
+      <h1 class="text-center">Sezione Anagrafica</h1>
+      <table class=" table table-striped  mb-5 mt-5 text-center">
+        <thead>
+          <tr>
+            <th>Nome</th>
+            <th>Cognome</th>
+            <th>Data di Nascita</th>
+            <th>Luogo di Nascita</th>
+            <th>Indirizzo di Residenza</th>
+            <th>Email</th>
+            <th>Numero di Telefono</th>
+
+
+
+        <tbody id="contenuto-tabella-sezione_anagrafica">
+          <!-- Contenuto generato dinamicamente -->
+        </tbody>
+        </tr>
+        </thead>
+      </table>
+    </div>
+
+    <div class="table-responsive-lg">
+      <h1 class="text-center">Sezione Documenti</h1>
+      <table class=" table table-striped  mb-5 mt-5 text-center">
+        <thead>
+          <tr>
+            <th>Numero Documento</th>
+            <th>Tipologia di Documento</th>
+
+
+
+
+        <tbody id="contenuto-tabella-sezione_anagrafica">
+          <!-- Contenuto generato dinamicamente -->
+        </tbody>
+        </tr>
+        </thead>
+      </table>
+    </div>
+
+
+
+
+
+    <button data-toggle="modal" data-target="#exampleModal" type="button"
+      class="btn btn-outline-secondary mx-auto d-block">Chiudi Conto</button>
+
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+      aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Sei sicuro di voler procedere alla chiusura del conto?</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="form-group">
+                <label for="message-text" class="col-form-label">Motivazione chiusura conto:</label>
+                <textarea class="form-control" id="message-text"></textarea>
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Chiudi</button>
+            <button type="button" class="btn btn-primary">Invia </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+
+
+
+
+
+
+
+  <script src="https://code.jquery.com/jquery-3.6.3.js" integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM="
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+  <script src="script.js"></script>
+</body>
+
+</html>
